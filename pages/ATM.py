@@ -26,7 +26,7 @@ def load_default_data():
             try: 
                 atm = {
                     "ID": row[df.columns[0]],  
-                    "Номер банкомата": row[df.columns[1]],
+                    "Номер банкомата": str(row[df.columns[1]]),
                     "Адрес банкомата": row[df.columns[2]],
                     "Coordinates": [(row[df.columns[3]]), (row[df.columns[4]])],  
                 }
